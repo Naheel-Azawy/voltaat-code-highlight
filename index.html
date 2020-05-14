@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Voltaat Syntax Highlighter</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+        <style>
+         body, button, select, input, a, textarea {
+             font-family: monospace;
+         }
+
+         hr {
+             display:    block;
+             height:     1px;
+             border:     0;
+             border-top: 0.3em solid black;
+             margin:     1em 0;
+             padding:    0;
+         }
+        </style>
+    </head>
+    <body>
+	    <script src="prism.js" data-manual></script>
+
+        <div style="margin:auto;max-width:850px">
+            <center>
+                <h1>Voltaat Syntax Highlighter</h1>
+                <hr>
+                By
+                <a href="https://naheel-azawy.github.io">Naheel</a>
+                - Source at <a href="https://github.com/Naheel-Azawy/voltaat-code-highlight">GitHub</a>
+                <br><br>
+
+                <h2>Source: <button onclick="color()">COLOR AND COPY HTML</button> </h2>
+                <textarea id="src" rows="20" cols="70" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+
+                <h2>Output:</h2>
+                <div id="out"></div>
+            </center>
+
+        </div>
+
+        
+        <script src="main.js"></script>
+    </body>
+</html>
